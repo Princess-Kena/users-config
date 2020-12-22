@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import { Container, Row } from 'react-bootstrap';
 import User from './User';
 
@@ -20,9 +19,6 @@ const Users = (props) => {
 
 
     );
-};
-const mapStateToProps =(state) =>({
-usersData : state.users.users
-})
+}
 
-export default connect(mapStateToProps)(Users);
+export default Users;

@@ -1,31 +1,11 @@
  const initialState = {
-    users: [
-        {
-          name: "Ahmed Zaky",
-          email: "ahmed@gmail.com",
-          gen: "12",
-          id: "ggnikt668"
-        },
-        {
-          name: "Princess Kena",
-          email: "princess@gmail.com",
-          gen: "15",
-          id: "bdhfj4i75"
-        },
-        {
-          name: "Adwoa Comfort",
-          email: "comfy@gmail.com",
-          gen: "12",
-          id: "rgfmhfu68,"
-        },
-        {
-          name: "Adwoa Comfort",
-          email: "comfy@gmail.com",
-          gen: "12",
-          id: "ghyegn364587"
-        },
-      ]
-     };
+     users:[
+         {name: "Anita", email:"ann@gmail.comm", gen: "23"},
+         {name: "Paa", email:"paa@gmail.comm", gen: "15"},
+         {name: "Danny", email:"danny@gmail.comm", gen: "7"}
+
+   ],
+ };
  const usersReducers =(state = initialState, action ) => {
  switch (action.type) {
      case "ADD_USER":

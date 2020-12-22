@@ -6,8 +6,37 @@ import AddUserForm from './Components/AddUserForm';
 
 
 class App extends Component {
-    
-  
+  constructor(props) {
+    super(props)
+    this.state = {
+      users: [
+        {
+          name: "Ahmed Zaky",
+          email: "ahmed@gmail.com",
+          gen: "12",
+          id: "ggnikt668"
+        },
+        {
+          name: "Princess Kena",
+          email: "princess@gmail.com",
+          gen: "15",
+          id: "bdhfj4i75"
+        },
+        {
+          name: "Adwoa Comfort",
+          email: "comfy@gmail.com",
+          gen: "12",
+          id: "rgfmhfu68,"
+        },
+        {
+          name: "Adwoa Comfort",
+          email: "comfy@gmail.com",
+          gen: "12",
+          id: "ghyegn364587"
+        },
+      ]
+    }
+  }
   addNewUser = (user) => {
     user.id = Math.random().toString()
     this.setState({
