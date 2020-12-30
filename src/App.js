@@ -8,12 +8,12 @@ import AddUserForm from './Components/AddUserForm';
 class App extends Component  {   
     
   
-  addNewUser = (user) => {
+ /* addNewUser = (user) => {
     user.id = Math.random().toString()
     this.setState({
       users: [...this.state.users, user]
     })
-  }
+  }*/
   deleteUser = (id) => {
     let undeletedUsers = this.state.users.filter(user => user.id !== id);
     this.setState({
@@ -30,7 +30,7 @@ class App extends Component  {
       <>
         <Container fluid style={{ marginTop: "2rem" }}>
           <Row>
-            <Col md="4"><AddUserForm addUser={this.addNewUser} /></Col>
+            <Col md="4"><AddUserForm  /></Col>
             <Col><Users  deleteUser={this.deleteUser} editUser={this.editUser} />
             </Col>
           </Row>

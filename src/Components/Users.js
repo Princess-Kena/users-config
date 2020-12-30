@@ -4,11 +4,14 @@ import { Container, Row } from 'react-bootstrap';
 import User from './User';
 
 const Users = (props) => {
+    console.log(props);
+    
     return (
         <Container>
             <Row>
                 {
                     props.usersData.map((user) => {
+                        
                         return( <User
                          userInfo={user} key={user.id}
                         deleteUser={props.deleteUser} editUser={props.editUser}/>
@@ -23,7 +26,7 @@ const Users = (props) => {
     );
 };
 const mapStateToProps = (state) =>({
-usersData : state.usersReducers.users
-})
+usersData : state.users
 
+});
 export default connect(mapStateToProps) (Users);
