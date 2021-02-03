@@ -24,7 +24,7 @@ const User = (props) => {
         <Modal.Body>
             <EditUserForm
              userInfo={props.userInfo}
-            // editUser={props.editUser} 
+             editUser={props.editUser} 
              closeModal={handleClose}/>
         </Modal.Body>
 

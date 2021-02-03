@@ -31,7 +31,7 @@ class App extends Component  {
         <Container fluid style={{ marginTop: "2rem" }}>
           <Row>
             <Col md="4"><AddUserForm  /></Col>
-            <Col><Users  deleteUser={this.deleteUser} editUser={this.editUser} />
+            <Col><Users/>
             </Col>
           </Row>
         </Container>
